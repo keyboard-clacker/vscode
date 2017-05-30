@@ -16,7 +16,7 @@ $env:HOME=$env:USERPROFILE
 $env:npm_config_arch="$arch"
 
 step "Install dependencies" {
-  exec { & npm install }
+  exec { & npm install --verbose }
 }
 
 $env:VSCODE_MIXIN_PASSWORD = $mixinPassword
